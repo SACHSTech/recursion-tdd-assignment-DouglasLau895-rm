@@ -17,13 +17,9 @@ public class RecursionTest{
      * An initial test
      */
     @Test
-    public void Test1(){
-        // make assertion statement(s)
-        // assertEquals(EXPECTEDVALUE, TESTVALUE);
-        // assertTrue(TESTBOOLEAN);
+    public void Test1() { // a char that isn't hi
+      assertEquals(0, Recursion.countHi("x"));
     }
-    
-    // add more tests
     
     @After
     public void afterTest(){
