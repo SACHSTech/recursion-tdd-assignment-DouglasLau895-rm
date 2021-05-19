@@ -6,7 +6,7 @@ public class Recursion{
 		 return 0;
     }
 
-	  if(str.charAt(0) == 'h' && str.charAt(1) == 'i') { 
+	  if(str.charAt(0) == 'h' && str.charAt(1) == 'i') { // recursive case
   		return 1 + countHi(str.substring(2));
     }
 	  return countHi(str.substring(1));  
