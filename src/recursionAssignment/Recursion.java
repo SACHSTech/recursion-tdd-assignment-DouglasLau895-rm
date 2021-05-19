@@ -5,7 +5,10 @@ public class Recursion{
     if(str.length() < 2) { // base case
 		 return 0;
     }
-    
-    return countHi(str.substring(1));
+
+	  if(str.charAt(0) == 'h' && str.charAt(1) == 'i') { 
+  		return 1 + countHi(str.substring(2));
+    }
+	  return countHi(str.substring(1));  
   }
 }
