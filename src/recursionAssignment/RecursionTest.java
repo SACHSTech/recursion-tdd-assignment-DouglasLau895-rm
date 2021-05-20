@@ -65,6 +65,31 @@ public class RecursionTest{
     public void ChangePiTest2() { // a char that isn't pi
       assertEquals("x", Recursion.changePi("x"));
     }
+
+    @Test
+    public void ChangePiTest3() { // in at beginning, middle, and end
+      assertEquals("3.14x3.14x3.14", Recursion.changePi("pixpixpi"));
+    }
+
+    @Test
+    public void ChangePiTest4() { // empty string
+      asserEquals("", Recursion.changePi(""));
+    }
+
+    @Test
+    public void ChangePiTest5() { // test1 from md file
+      assertEquals("x3.14x", Recursion.countHi("xpix"));
+    }
+
+    @Test
+    public void ChangePiTest6() { // test2 from md file
+      assertEquals("3.143.14", Recursion.countHi("pipi"));
+    }
+
+    @Test
+    public void ChangePiTest7() { // test3 from md file
+      assertEquals("3.14p", Recursion.countHi("pip"));
+    }
     
     @After
     public void afterTest(){
