@@ -78,17 +78,36 @@ public class RecursionTest{
 
     @Test
     public void ChangePiTest5() { // test1 from md file
-      assertEquals("x3.14x", Recursion.countHi("xpix"));
+      assertEquals("x3.14x", Recursion.changePi("xpix"));
     }
 
     @Test
     public void ChangePiTest6() { // test2 from md file
-      assertEquals("3.143.14", Recursion.countHi("pipi"));
+      assertEquals("3.143.14", Recursion.changePi("pipi"));
     }
 
     @Test
     public void ChangePiTest7() { // test3 from md file
-      assertEquals("3.14p", Recursion.countHi("pip"));
+      assertEquals("3.14p", Recursion.changePi("pip"));
+    }
+
+    /**
+    * Problem Set 3: array220 Tests
+    */
+
+    @Test
+    public void array220Test1() { // test1 from md file
+      assertEquals(true, Recursion.array220(new int[] {1, 2, 20}, 0));
+    }
+
+    @Test
+    public void Test13() { //test2 from md file
+      assertEquals(false, Recursion.array220(new int[] {3}, 0));
+    }
+
+    @Test
+    public void Test14(){ // test3 from md file
+      assertEquals(true, Recursion.array220(new int[] {3, 30}, 0));
     }
     
     @After
