@@ -15,11 +15,11 @@ public class Recursion{
   public static String changePi(String str) {
     if (str.length() < 2) { // base case
       return str;
-    }
-    
-    if (str.substring(0, 2).equals("pi")) { // recursive case
+
+    } else if (str.substring(0, 2).equals("pi")) { // recursive case
       return "3.14" + Recursion.changePi(str.substring(2)); 
-    }
-    return str.charAt(0) + Recursion.changePi(str.substring(1));
+      
+    } else
+        return str.charAt(0) + Recursion.changePi(str.substring(1));
   }
 }

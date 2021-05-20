@@ -73,7 +73,7 @@ public class RecursionTest{
 
     @Test
     public void ChangePiTest4() { // empty string
-      asserEquals("", Recursion.changePi(""));
+      assertEquals("", Recursion.changePi(""));
     }
 
     @Test
