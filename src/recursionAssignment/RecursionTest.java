@@ -61,7 +61,10 @@ public class RecursionTest{
       assertEquals("3.14", Recursion.changePi("pi"));
     }
 
-    
+    @Test
+    public void ChangePiTest2() { // a char that isn't pi
+      assertEquals("x", Recursion.changePi("x"));
+    }
     
     @After
     public void afterTest(){
