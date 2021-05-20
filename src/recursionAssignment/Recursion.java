@@ -11,4 +11,7 @@ public class Recursion{
     }
 	  return countHi(str.substring(1));  
   }
+
+    public static String changePi(String str) {
+    }
 }

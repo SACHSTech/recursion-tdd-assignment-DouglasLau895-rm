@@ -14,8 +14,9 @@ public class RecursionTest{
     }
     
     /**
-     * An initial test
+     * Problem Set 1: CountHi Tests
      */
+
     @Test
     public void CountHiTest1() { // a char that isn't hi
       assertEquals(0, Recursion.countHi("x"));
@@ -27,7 +28,7 @@ public class RecursionTest{
     }
 
      @Test
-    public void CountHiTest3() { // only hi
+    public void CountHiTest3() { // only hi & test3 from md file
       assertEquals(1, Recursion.countHi("hi"));
     }
 
@@ -40,6 +41,27 @@ public class RecursionTest{
     public void CountHiTest5() { // testing upper and lower cases
       assertEquals(0, Recursion.countHi("HIxhIxHi"));
     }
+
+    @Test
+    public void CountHiTest6() { // test1 from md file
+      assertEquals(1, Recursion.countHi("xxhixx"));
+    }
+
+    @Test
+    public void CountHiTest7() { // test2 from md file
+      assertEquals(2, Recursion.countHi("xhixhix"));
+    }
+
+    /**
+    * Problem Set 2: ChangePi Tests
+    */
+
+    @Test
+    public void ChangePiTest1() { // only pi
+      assertEquals("3.14", Recursion.changePi("pi"));
+    }
+
+    
     
     @After
     public void afterTest(){
