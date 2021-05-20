@@ -101,12 +101,12 @@ public class RecursionTest{
     }
 
     @Test
-    public void Test13() { //test2 from md file
+    public void array220Test2() { //test2 from md file
       assertEquals(false, Recursion.array220(new int[] {3}, 0));
     }
 
     @Test
-    public void Test14(){ // test3 from md file
+    public void array220Test3(){ // test3 from md file
       assertEquals(true, Recursion.array220(new int[] {3, 30}, 0));
     }
     
