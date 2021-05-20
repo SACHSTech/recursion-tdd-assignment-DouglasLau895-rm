@@ -6,6 +6,11 @@ import org.junit.After;
 
 import recursionAssignment.Recursion;
 
+/**
+* The class RecursionTest will hold all the tests for problem sets 1, 2, and 3
+* author: @Douglas Lau
+*/
+
 public class RecursionTest{
     
     @Before

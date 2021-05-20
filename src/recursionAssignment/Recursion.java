@@ -1,5 +1,10 @@
 package recursionAssignment;
 
+/**
+* This Recursion class will hold the methods for Problem Set 1, 2, and 3
+* author: @Douglas Lau
+*/
+
 public class Recursion{
 
   /**
