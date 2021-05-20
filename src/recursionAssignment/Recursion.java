@@ -40,7 +40,7 @@ public class Recursion{
   */
   
   public static boolean array220(int[] intNums, int index) {
-    if(index == intNums.length - 1 || intNums.length == 0) { // base case
+    if(index == intNums.length - 1 || intNums.length == 0) { // base cases
       return false;
     }
 
