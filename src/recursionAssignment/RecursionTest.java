@@ -96,6 +96,11 @@ public class RecursionTest{
       assertEquals("3.14p", Recursion.changePi("pip"));
     }
 
+    @Test
+    public void ChangePiTest8() { // testing uppercases
+      assertEquals("PixpIx3.14xPI", Recursion.changePi("PixpIxpixPI"));
+    }
+
     /**
     * Problem Set 3: array220 Tests
     */
