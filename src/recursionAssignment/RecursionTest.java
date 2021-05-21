@@ -111,27 +111,27 @@ public class RecursionTest{
     }
 
     @Test
-    public void array220Test3(){ // test3 from md file
+    public void array220Test3() { // test3 from md file
       assertEquals(true, Recursion.array220(new int[] {3, 30}, 0));
     }
 
     @Test
-    public void array220Test4(){ // empty array
+    public void array220Test4() { // empty array
       assertEquals(false, Recursion.array220(new int[] {}, 0));
     }
 
     @Test
-    public void array220Test5(){ // only 0 in array
+    public void array220Test5() { // only 0 in array
       assertEquals(false, Recursion.array220(new int[] {0}, 0));
     }
 
     @Test
-    public void array220Test6(){ // spaced apart
+    public void array220Test6() { // spaced apart
       assertEquals(false, Recursion.array220(new int[] {2, 3, 20, 5}, 0));
     }
 
     @Test
-    public void array220Test7(){ // found in the beginning, middle, and end
+    public void array220Test7() { // found in the beginning, middle, and end
       assertEquals(true, Recursion.array220(new int[] {1, 10, 2, 3, 30, 4, 5, 50}, 0));
     }
     

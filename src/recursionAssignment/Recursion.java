@@ -13,11 +13,11 @@ public class Recursion{
   */
 
   public static int countHi(String str) {
-    if(str.length() < 2) { // base case
+    if (str.length() < 2) { // base case
 		 return 0;
     }
 
-	  if(str.charAt(0) == 'h' && str.charAt(1) == 'i') { // recursive case
+	  if (str.charAt(0) == 'h' && str.charAt(1) == 'i') { // recursive case
   		return 1 + countHi(str.substring(2));
     }
 	  return countHi(str.substring(1));  
@@ -45,7 +45,7 @@ public class Recursion{
   */
   
   public static boolean array220(int[] intNums, int index) {
-    if(index == intNums.length - 1 || intNums.length == 0) { // base cases
+    if (index == intNums.length - 1 || intNums.length == 0) { // base cases
       return false;
     }
 
