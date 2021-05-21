@@ -2,14 +2,17 @@ package recursionAssignment;
 
 /**
 * This Recursion class will hold the methods for Problem Set 1, 2, and 3
-* author: @Douglas Lau
+* @author: Douglas Lau
 */
 
 public class Recursion{
 
   /**
   * Problem Set 1: countHi
-  * author: @Douglas Lau
+  * A method that returns the number of "hi"s within a given string
+  * @param str (The Input String)
+  * @return an int representing number of 'hi'
+  * @author: Douglas Lau
   */
 
   public static int countHi(String str) {
@@ -17,7 +20,7 @@ public class Recursion{
 		 return 0;
     }
 
-	  if (str.charAt(0) == 'h' && str.charAt(1) == 'i') { // recursive case
+	  if (str.substring(0, 2).equals("hi")) { // recursive case
   		return 1 + countHi(str.substring(2));
     }
 	  return countHi(str.substring(1));  
@@ -25,14 +28,17 @@ public class Recursion{
 
   /**
   * Problem Set 2: changePi
-  * author: @Douglas Lau
+  * A program that changes all "pi" to 3.14
+  * @param str (The Input String)
+  * @return a string with all "pi" replaced with "3.14"
+  * @author: Douglas Lau
   */
 
   public static String changePi(String str) {
     if (str.length() < 2) { // base case
       return str;
 
-    } else if (str.charAt(0) == 'p' && str.charAt(1) == 'i') { // recursive case
+    } else if (str.substring(0, 2).equals("pi")) { // recursive case
       return "3.14" + Recursion.changePi(str.substring(2)); 
 
     } else
@@ -41,7 +47,10 @@ public class Recursion{
 
   /**
   * Problem Set 3: array220
-  * author: @Douglas Lau
+  * A program that returns true when the next number in the array is 10 times of the previous number
+  * @param intNums (Input Array), index (Input Index)
+  * @return true if the next number in the array is 10 times the previous number
+  * @author: Douglas Lau
   */
   
   public static boolean array220(int[] intNums, int index) {
